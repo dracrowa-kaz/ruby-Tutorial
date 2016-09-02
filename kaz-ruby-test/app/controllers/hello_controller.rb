@@ -9,4 +9,8 @@ class HelloController < ApplicationController
 	def view
 		@msg = 'Message Test'
 	end
+
+	def list
+		@books = Book.all
+	end
 end
